@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CSS Website Layout</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+/* Style the header */
+.header {
+  background-color: #f1f1f1;
+  padding: 20px;
+  text-align: center;
+}
+
+/* Style the top navigation bar */
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+/* Style the topnav links */
+.topnav a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change color on hover */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 15px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.footer{
+    background-color: grey;
+    text-align: center;
+    padding: auto;
+}
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<div class="header">
+  <h1>Anime</h1>
+</div>
+
+<div class="topnav">
+  <a href="#">One Piece</a>
+  <a href="#">Naruto</a>
+  <a href="#">Gintama</a>
+</div>
+
+<div class="row">
+  <div class="column">
+    <h2>Luffy</h2>
+    <p>Monkey D. Luffy, also known as " Straw Hat Luffy" and commonly as "Straw Hat",[8] is the main protagonist of the manga and anime, One Piece. He is the founder and captain of the increasingly infamous and powerful Straw Hat Pirates, as well as one of its top fighters.[27] His lifelong dream is to become the Pirate King by finding the legendary treasure left behind by the late Gol D. Roger.[28] He believes that being the Pirate King means having the most freedom in the world</p>
+  </div>
+  
+  <div class="column">
+    <h2>Zoro</h2>
+    <p>Roronoa Zoro,[1] also known as "Pirate Hunter" Zoro,[7] is the combatant of the Straw Hat Pirates, and one of their two swordsmen. Formerly a bounty hunter,[5] he is the second member of Luffy's crew and the first to join it, doing so in the Romance Dawn Arc.
+As a master of Three Sword Style, a swordsmanship style which he created during his childhood training in Shimotsuki Village, Zoro is among the three most powerful combatants of the Straw Hats, alongside Luffy and Sanji.[19][20] His dream is to become the greatest swordsman in the world, in order to honor a promise he made to his deceased childhood friend Kuina.</p>
+  </div>
+  
+  <div class="column">
+    <h2>Sanji</h2>
+    <p>"Black Leg" Sanji,[6] born as Vinsmoke Sanji,[25][26][27] is the cook of the Straw Hat Pirates. He is the fifth member of the crew and the fourth to join, doing so at the end of the Baratie Arc.
+
+        Born as the third son and fourth child of the Vinsmoke Family[28] (thus making him a former prince of the Germa Kingdom), he disowned his family twice, once in his youth and again after reuniting with them as an adult.[29] After fleeing the Vinsmokes as a child, he eventually entered the care of Zeff as the sous chef of the Baratie, where he would remain until he met</p>
+  </div>
+</div>
+
+<div class="footer"> 
+    <h4>Copyright@Zura</h4>
+</div>
+</body>
+</html>
+
